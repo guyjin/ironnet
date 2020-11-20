@@ -1,7 +1,8 @@
-function Header() {
+function Header({ headerText, instructionText }) {
   return (
     <>
-      <p>Header</p>
+      <h2>{headerText}</h2>
+      <p>{instructionText}</p>
     </>
   );
 }
