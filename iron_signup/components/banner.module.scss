@@ -1,0 +1,48 @@
+.banner {
+  &:before {
+    content: "";
+    display: block;
+    border: solid 20px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    top: -57px;
+    right: -57px;
+    border-radius: 5px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    border: solid 40px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    bottom: -40px;
+    left: -40px;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.qube {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin-right: 20px;
+}
+
+.coa {
+  margin-bottom: 50px;
+}

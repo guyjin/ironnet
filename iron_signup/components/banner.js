@@ -1,16 +1,19 @@
 import styles from "./layout.module.scss";
+import bannerstyles from "./banner.module.scss";
 function Banner() {
   return (
     <>
-      <div className={`banner ${styles.banner}`}>
-        <div className="logo">
-          <div className="logoQube"></div>
-          ACME
+      <div className={`banner ${styles.bannerLayout} ${bannerstyles.banner}`}>
+        <div className={bannerstyles.logo}>
+          <div className={bannerstyles.qube}></div>
+          <h3>ACME</h3>
         </div>
-        Sign in and start saving your time today.
-        <div className="tagLine">
+        <h1 className={bannerstyles.coa}>
+          Sign in and start saving your time today.
+        </h1>
+        <h5>
           We provide 24/7/support with our highly dedicated professional team.
-        </div>
+        </h5>
       </div>
     </>
   );

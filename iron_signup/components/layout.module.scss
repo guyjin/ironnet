@@ -1,6 +1,10 @@
-.banner {
+.bannerLayout {
   grid-area: banner;
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: linear-gradient(var(--gradient-pink), var(--gradient-red));
+  padding: 75px;
+  color: var(--primary-text);
 }
