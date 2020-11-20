@@ -12,7 +12,7 @@ function Banner() {
           Sign in and start saving your time today.
         </h1>
         <h5>
-          We provide 24/7/support with our highly dedicated professional team.
+          We provide 24/7 support with our highly dedicated professional team.
         </h5>
       </div>
     </>
