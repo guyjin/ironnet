@@ -1,0 +1,6 @@
+.banner {
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--gradient-pink), var(--gradient-red));
+}
