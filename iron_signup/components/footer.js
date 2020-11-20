@@ -1,7 +1,7 @@
 import styles from "./layout.module.scss";
 function Footer() {
   return (
-    <div className={styles.footer}>
+    <div className={`smallText ${styles.footer}`}>
       <span>&copy; Copyright ACME 2020</span>
     </div>
   );

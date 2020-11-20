@@ -2,6 +2,7 @@
   --gradient-pink: #f857a6;
   --gradient-red: #ff5858;
   --default-text: #403e45;
+  --primary: #f857a6;
   --primary-text: #fff;
   --input-border: #c9c0c0;
   --input-background: #f7f4f5;
@@ -174,7 +175,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -210,14 +211,18 @@ h3 {
 .app {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: minmax(33%, 600px) 1fr;
+  grid-template-columns: 600px 1fr;
   grid-template-rows: auto;
   grid-template-areas: "banner main";
 
   .mainContent {
     grid-area: main;
+    justify-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 360px;
   }
 }

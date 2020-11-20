@@ -1,9 +1,14 @@
+import styles from "./header.module.scss";
+
 function Header({ headerText, instructionText }) {
   return (
-    <>
-      <h2>{headerText}</h2>
-      <p>{instructionText}</p>
-    </>
+    <div className={styles.header}>
+      <h3 className={styles.headerText}>{headerText}</h3>
+      <div className={`smallText ${styles.headerInstructionText}`}>
+        {instructionText}
+      </div>
+      <hr className={styles.blip} />
+    </div>
   );
 }
 

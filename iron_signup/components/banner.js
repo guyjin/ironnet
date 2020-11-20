@@ -1,5 +1,8 @@
 import styles from "./layout.module.scss";
 import bannerstyles from "./banner.module.scss";
+
+//TODO: pull all text out into config files.
+
 function Banner() {
   return (
     <>
