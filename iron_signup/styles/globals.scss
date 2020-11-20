@@ -224,5 +224,39 @@ h3 {
     flex-direction: column;
     justify-content: center;
     width: 360px;
+    position: relative;
+
+    .forms {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        border: 1px solid var(--input-border);
+        background: var(--input-background);
+        padding: 17px 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+        &:valid {
+          border-color: var(--gradient-pink);
+        }
+      }
+
+      input[type="submit"] {
+        background: linear-gradient(
+          90deg,
+          var(--gradient-pink),
+          var(--gradient-red)
+        );
+        color: var(--primary-text);
+        text-transform: uppercase;
+        font-weight: 800;
+        border: none;
+      }
+
+      .helpText {
+        text-align: center;
+      }
+    }
   }
 }
